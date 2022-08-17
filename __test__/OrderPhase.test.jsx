@@ -64,11 +64,22 @@ describe('Test on hole App', () => {
 		});
 		userEvent.click(confirmOrderButton);
 
+		// Expect "loading" to show
+		const loading = screen.getByText(/loading/i);
+		expect(loading).toBeInTheDocument();
+
 		// confirm order number on confirmation page
 		const thanYouHeader = await screen.findByRole('heading', {
 			name: /thank you/i,
 		});
 		expect(thanYouHeader).toBeInTheDocument();
+
+		// expect that loading has disappeared
+		const notLoading = screen.queryByText('loading');
+		expect(notLoading).not.toBeInTheDocument();
+
+		const orderNumber = await screen.findByText(/order number/i);
+		expect(orderNumber).toBeInTheDocument();
 
 		// click new order button on confirmation page
 		const newOrderButton = screen.getByRole('button', { name: /new order/i });
