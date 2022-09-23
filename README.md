@@ -63,9 +63,9 @@ yarn test
 
 ## Author
 
-- Website - [bryanaguilar](https://www.bryan-aguilar.com/)
-- Medium - [bryanaguilar6174](https://bryanaguilar6174.medium.com/)
-- LinkeIn - [bryanaguilar6174](https://www.linkedin.com/in/bryanaguilar6174)
+- Website - [www.bryan-aguilar.com](https://www.bryan-aguilar.com/)
+- Medium - [baguilar6174](https://baguilar6174.medium.com/)
+- LinkeIn - [baguilar6174](https://www.linkedin.com/in/baguilar6174)
 
 ## Application
 
